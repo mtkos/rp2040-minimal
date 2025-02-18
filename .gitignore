@@ -1,0 +1,10 @@
+*.elf
+*.bin
+*.asm
+*.map
+*.uf2
+*.dmp
+*.pio.h
+*.html
+bs2_default_padded_checksummed_patched.S
+bs2_default_padded_checksummed.S
