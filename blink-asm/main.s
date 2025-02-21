@@ -42,7 +42,6 @@ str r2, [r0, # SIO_GPIO_OUT_XOR_OFFSET]
 ldr r1, = 1000000
 2:
 sub r1, # 1
-cmp r1, # 0
 bne 2b
 
 b 1b
