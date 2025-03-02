@@ -19,5 +19,7 @@ bootloader from source is explained in the 'boot2' map.
 3. The rp2040 has an interesting peripheral, called the PIO, which is specific to this MCU. It is documented in chapter 3 of the data sheet. An example program can be found in the
 'ws2812d' map.
 
+4. The rp2040 is a dual core processor. The blink-multicore program shows how to use the second core.
+
 In the include files, which define the registers and bit fields, the same names have been used as in the rp2040 SDK, which, in turn, have a simple relationship to the names used in [rp2040].
 Hence, the programs should be easy to understand if you have this datasheet at hand.
