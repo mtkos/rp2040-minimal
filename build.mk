@@ -49,7 +49,7 @@ objdump: $(TARGET).elf
 nm: $(TARGET).elf
 	$(NM) $^
 
-$(TARGET).uf2: $(TARGET).elf
-	../utils/elf2uf2 $^ $(TARGET).uf2
+$(TARGET).uf2: $(TARGET).bin
+	../utils/uf2conv.py -b 0x10000000 -f 0xe48bff56 -c -o $(TARGET).uf2 $^
 
 uf2: $(TARGET).uf2
