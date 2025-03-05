@@ -8,7 +8,6 @@
 #include "../include/clocks.h"
 #include "../include/io_bank0.h"
 #include "../include/uart.h"
-#include "../include/m0plus.h"
 
 #define XOSC_FREQ 12000000
 #define POSTDIV1 6

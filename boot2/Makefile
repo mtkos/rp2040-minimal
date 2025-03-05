@@ -3,7 +3,6 @@ SRC = ${TARGET}.S
 
 include ../build.mk
 
-# FLAGS += -Wl,-T../ld/boot_stage2.ld -I../sdk_include
 FLAGS +=  -I../sdk_include
 
 pad: bs2_default_padded_checksummed.S
@@ -14,6 +13,6 @@ bs2_default_padded_checksummed.S: $(TARGET).bin
 patch: bs2_default_padded_checksummed_patched.S
 
 bs2_default_padded_checksummed_patched.S: bs2_default_padded_checksummed.S
-	cp $^ $@; patch $@ bs2_default_padded_checksummed_patched.patch
+	sed 's/.boot2/.text.init.enter/g' $^ > $@
 
 
