@@ -50,6 +50,6 @@ nm: $(TARGET).elf
 	$(NM) $^
 
 $(TARGET).uf2: $(TARGET).bin
-	../utils/uf2conv.py -b 0x10000000 -f 0xe48bff56 -c -o $(TARGET).uf2 $^
+	../utils/bin2uf2.py $^ $@
 
 uf2: $(TARGET).uf2
