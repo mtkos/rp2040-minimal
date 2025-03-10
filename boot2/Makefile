@@ -8,7 +8,7 @@ FLAGS +=  -I../sdk_include
 pad: bs2_default_padded_checksummed.S
 
 bs2_default_padded_checksummed.S: $(TARGET).bin
-	../utils/pad_checksum -s 0xffffffff $^ $@
+	../utils/pad_checksum.py $^ $@
 
 patch: bs2_default_padded_checksummed_patched.S
 
