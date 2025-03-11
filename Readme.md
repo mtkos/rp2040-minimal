@@ -23,3 +23,5 @@ bootloader from source is explained in the 'boot2' map.
 
 In the include files, which define the registers and bit fields, the same names have been used as in the rp2040 SDK, which, in turn, have a simple relationship to the names used in [rp2040].
 Hence, the programs should be easy to understand if you have this datasheet at hand.
+
+To keep the programs as readable as possible, no error checking whatsoever is done. This includes the utilities in the 'utils' directory.

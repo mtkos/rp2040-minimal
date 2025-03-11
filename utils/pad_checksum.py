@@ -29,5 +29,5 @@ for i in range(0, 256, 16):
     f.write('.byte')
     for j in l[i:i + 15]:
         f.write(' {0:#0{1}x},'.format(j, 4))
-    f.write(' {0:#0{1}x} \n'.format(l[i + 15], 4))
+    f.write(' {0:#0{1}x}\n'.format(l[i + 15], 4))
 f.close()

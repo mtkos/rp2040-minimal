@@ -8,14 +8,14 @@ flags = 0x00002000
 load_address = 0x10000000
 block_size = 256
 family_id = 0xe48bff56
-padding = b'\x00'*(476 - 256)
+padding = bytes(476 - 256)
 final_magic_number = 0x0ab16f30
 
 def pad(l):
     if len(l)%256 == 0:
         return l
     else:
-        return l + b'\x00'*(256 - len(l)%256)
+        return l + bytes(256 - len(l)%256)
 
 def word(x):
     return x.to_bytes(4, 'little')
