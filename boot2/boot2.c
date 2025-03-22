@@ -1,5 +1,4 @@
 #include <stdint.h>
-//#include <stdbool.h>
 
 #include "../include/common.h"
 #include "../include/ssi.h"
